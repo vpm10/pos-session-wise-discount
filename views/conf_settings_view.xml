@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="res_config_settings_inherit_view" model="ir.ui.view">
+        <field name="name">res.config.settings.inherit.view</field>
+        <field name="model">res.config.settings</field>
+        <!--        <field name="priority" eval="10"/>-->
+        <field name="inherit_id"
+               ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='pos_use_pricelist']"
+                   position="after">
+                <div class="col-12 col-lg-6 o_setting_box" id="limit_discount">
+                    <group class="o_setting_left_pane">
+                        <field name="category_ids" widget="many2many_tags"/>
+                        <field name="discount_limit"/>
+                    </group>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
