@@ -15,7 +15,7 @@
     ],
     'assets': {
        'point_of_sale.assets': [
-
+           'pos_session_wise_discount/static/src/js/pos_session.js'
        ],
 }
 }

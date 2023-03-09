@@ -10,7 +10,7 @@
             <xpath expr="//field[@name='pos_use_pricelist']"
                    position="after">
                 <div class="col-12 col-lg-6 o_setting_box" id="limit_discount">
-                    <group class="o_setting_left_pane">
+                    <group class="o_setting_right_pane"  style="margin-top: 10px;">
                         <field name="category_ids" widget="many2many_tags"/>
                         <field name="discount_limit"/>
                     </group>
